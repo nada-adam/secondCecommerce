@@ -10,15 +10,66 @@
 <body>
   <div class="container-fluid">
     <div class="row">
-      <nav class="navbar">
+      <nav class="navbar custom-navbar">
         <div class="container">
           <div class="navbar-header">
             <a href="." class="header-brand">
                   <img src="./images/logo.png" alt="متجر الكتروني">
                 </a>
               </div>
+              <form class="form-inline">
+                <input type="search" class="form-control" placeholder="البحث..">
+                <div class="dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                   اختر فئة
+
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" name="search-caterogy" value="men">
+                          رجالي
+                        </label>
+                      </div>
+                    </li>
+
+                    <li>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" name="search-caterogy" value="men">
+                          رجالي
+                        </label>
+                      </div>
+                    </li>
+
+                    <li>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" name="search-caterogy" value="woman">
+                          نسائي
+                        </label>
+                      </div>
+                    </li>
+
+                    <li>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" name="search-caterogy" value="kids">
+                          اطفال
+                        </label>
+                      </div>
+                    </li>
+
+                  </ul>
+                </div>
+                <button  type="submit"class="btn"> 
+                  ابحث
+                </button>
+              </form>
+              
         </div>
-          </nav>
-    </div>
-  </div>
+      </nav>
+       </div>
+        </div>
 </body>

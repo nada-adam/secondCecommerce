@@ -39,9 +39,14 @@ module: {
 
       {
         test:/\.css$/,
-        use:[
-        MiniCssExtractPlugin.loader,
-         'css-loader'
+          use: [
+            {
+              loader: MiniCssExtractPlugin.loader,
+              options: {
+                publicPath: "../",
+              },
+            },
+         'css-loader',
         ]
  
       },
@@ -57,10 +62,22 @@ module: {
             }
           }
         ]
-        
+      },
 
-
+      {
+        test: /\.(svg|eot|woff|woff2|ttf)$/,
+        use:[
+          {
+            loader:"file-loader",
+            options:{
+              name:'[name].[ext]',
+              outputPath:"fonts",
+              esModule:false,
+            }
+          }
+        ]
       }
+
 
 
     ]
