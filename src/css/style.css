@@ -127,3 +127,9 @@ body{
     color: #000;
     background-color: #bfbfbf;
 }
+/*المنتجات المميزة*/
+#carousel-featured{
+background-color: #F7F8F3;
+height: 400px;
+
+}
