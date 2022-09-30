@@ -6,5 +6,10 @@ import 'popper.js/dist/popper.min';
 import '@fortawesome/fontawesome-free/js/all.min'
 
 $(function () {
-    $('[data-toggle="tooltip"]').tooltip()
-  })
+    $('[data-toggle="tooltip"]').tooltip();
+           
+    $('.add-to-cart-btn').on( "click",function() {
+      alert('أضيف المُنتج إلى عربة الشراء');
+
+  });
+});
