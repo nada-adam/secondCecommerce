@@ -14,6 +14,12 @@
 				<nav class="navbar custom-navbar navbar-expand-lg">
 					<div class="container">
 						<div class="navbar-header">
+							<button class="navbar-toggler btn btn-icon collapsed"  data-toggle="collapse" data-target="#navbar-collapsed-menu">
+								<i class="fas fa-bars"></i>
+						   </button>
+							<a href="./checkout.html" class="navbar-toggler btn btn-icon">
+							  <i class="fas fa-shopping-cart"></i>
+							</a>
 							<a href="." class="navbar-brand">
 								<img src="./images/logo.png" alt="متجر عربي" />
 							</a>
@@ -48,15 +54,17 @@
 									</li>
 								</ul>
 							</div>
-							<button type="submit" class="btn search-btn">ابحث</button>
+							<button class="btn search-btn" type="submit" >ابحث</button>
 						</form>
+					<div class="collapse navbar-collapse" id="navbar-collapsed-menu"> 
+
 						<ul class="navbar-nav mr-auto">
 							<li class="nav-item active">
-								<a href="#" class="nav-link">الصفحة الرئيسية</a>
+								<a href="./index.html" class="nav-link">الصفحة الرئيسية</a>
 							</li>
 							<li class="nav-item dropdown">
 								<a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">أقسام المتجر</a>
-								<ul class="dropdown-menu custom-dropdown-menu">
+								<ul class="dropdown-menu custom-dropdown-menu-right">
                                 <li>
 									<a href="#" class="dropdown-item">رجالي</a>
 								</li>
@@ -74,7 +82,7 @@
 							<li class="nav-item">
 								<a href="contact.html" class="nav-link">تواصل معنا</a>
 							</li>
-							<li>
+							<li class="d-none d-lg-block">
 								<a href="checkout.html"id="btn-shopping-cart" class="btn custom-btn btn-icon"
 								title="عربة الشراء" data-toggle="tooltip" data-placement="bottom">
 									<i class="fas fa-shopping-cart"></i>
@@ -82,6 +90,7 @@
 							</li>
 						</ul>
 					</div>
+				</div>
 				</nav>
 			</div>
 			 <!--نهاية الشريط العلوي-->
@@ -89,15 +98,16 @@
 			  <!--المنتجات المميزة-->
 			  <div class="row carousel-row">
 				<div class="col-12">
+					<!--الصور المتبدله-->
 					<div id="carousel-featured" class="carousel slide" data-ride="carousel">
 						<div class="carousel-inner">
 							<div class="carousel-item active">
 								<div class="container">
 									<div class="row">
-										<div class="col-4 offset-2">
+										<div class="col-4 offset-lg-2 text-center">
 											<img src="images/lacoste_1.png" alt="تي شيرت رجالي من لاكوست">
 										</div>
-										<div class="col-5">
+										<div class="col-12 col-md-8 col-lg-5">
 											<div class="product-details">
 												<div class="sale large">
 													50%
@@ -114,10 +124,10 @@
 							<div class="carousel-item">
 								<div class="container">
 									<div class="row">
-										<div class="col-4 offset-2">
+										<div class="col-4 offset-lg-2 text-center">
 											<img src="images/lacoste_2.png" alt="حقيبة شانتاكو نسائية">
 										</div>
-										<div class="col-5">
+										<div class="col-12 col-md-8 col-lg-5">
 											<div class="product-details">
 												<div class="product-category">نسائي</div>
 												<h1>حقيبة شانتاكو نسائية</h1>
@@ -130,10 +140,10 @@
 							<div class="carousel-item">
 								<div class="container">
 									<div class="row">
-										<div class="col-4 offset-2">
+										<div class="col-4 offset-lg-2 text-center">
 											<img src="images/lacoste_3.png" alt="تي شيرت بولو">
 										</div>
-										<div class="col-5">
+										<div class="col-12 col-md-8 col-lg-5">
 											<div class="product-details">
 												<div class="product-category">الأكثر مبيعًا</div>
 												<h1>تي شيرت بولو</h1>
@@ -146,10 +156,10 @@
 							<div class="carousel-item">
 								<div class="container">
 									<div class="row">
-										<div class="col-4 offset-2">
+										<div class="col-4 offset-lg-2 text-center">
 											<img src="images/adidas_3.png" alt="بدلة فايبر الرياضية">
 										</div>
-										<div class="col-5">
+										<div class="col-12 col-md-8 col-lg-5">
 											<div class="product-details">
 												<div class="product-category">اطفال</div>
 												<h1>بدلة فايبر الرياضية</h1>
@@ -184,7 +194,7 @@
 			          <!--مميّزات المتجر-->
 					  <div class="container">
 						<div class="row">
-							<div id="store-features" class="col-12 col-md-8 offset-md-2 col-lg-6-brand-product">
+							<div id="store-features" class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
 								<h3 class="text-center custom-heading">
 									مميزات المتجر
 								</h3>
