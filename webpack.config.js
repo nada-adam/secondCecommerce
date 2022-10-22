@@ -98,8 +98,12 @@ plugins: [
         filename: "index.html",
         template: "./src/index.html",
     }),
+
+    new HtmlWebpackPlugin({
+      filename: "product.html",
+      template: "./src/product.html",
+    }),
     new MiniCssExtractPlugin ({filename:"css/style.css"}),
-    
     new OptimizeCSSAssetsPlugin({}),
 
 ],

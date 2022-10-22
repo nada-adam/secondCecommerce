@@ -10,6 +10,11 @@ $(function () {
            
     $('.add-to-cart-btn').on( "click",function() {
       alert('أضيف المُنتج إلى عربة الشراء');
+    });
+      $('.product-option input[type="radio"]').on( "change",function() {
+        $(this).parents('.product-option').siblings().removeClass('active');
+        $(this).parents('.product-option').addClass('active');
+    
 
   });
 });
