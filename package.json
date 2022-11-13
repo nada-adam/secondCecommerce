@@ -25,7 +25,9 @@
   "dependencies": {
     "bootstrap": "^4.5.3",
     "jquery": "^3.5.1",
+    "jquery-ui-touch-punch": "^0.2.3",
     "optimize-css-assets-webpack-plugin": "^5.0.0",
-    "popper.js": "^1.16.1"
+    "popper.js": "^1.16.1",
+    "webpack-jquery-ui": "^2.0.1"
   }
 }
